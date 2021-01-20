@@ -8,7 +8,7 @@ This project utilizes the data optained from the U.S. bikeshare data from Chicag
 
 ### Files used
 bikeshare2.py
-(Which relied on csv data files for Washington, Chicago, and New York City) 
+(Which relied on .csv data files for Washington, Chicago, and New York City) 
 
 ### Credits
 Special thanks to:
