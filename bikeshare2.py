@@ -182,7 +182,11 @@ def user_stats(df):
 
     try:
         latest_birth_year = df["Birth Year"].max()
+<<<<<<< HEAD
         print("The Most Recent Birth Year is:", latest_birth_year)
+=======
+        print("The Most Recent Birth Year is:", m_recent_birth_year)
+>>>>>>> documentation
     except KeyError:
         print("Unavailable data.")
 

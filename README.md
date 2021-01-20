@@ -1,15 +1,20 @@
 ### Date created
-Include the date you created this project and README file.
-
+This data has finalized and ready to upload on January 17th 2021 and the README.md file on Januray 20th 2021
 ### Project Title
-Replace the Project Title
+PDSND Project 2 - US Bikeshare
 
 ### Description
-Describe what your project is about and what it does
+This project utilizes the data optained from the U.S. bikeshare data from Chicago, New York City, and Washington, to apply (via python script) statistics and gain information such as the most popular month, day, trip durations, most common start point and end point, and other related information through an interactive inviornment, as well as the ability to view raw data.
 
 ### Files used
-Include the files used
+bikeshare2.py
+(Which relied on csv data files for Washington, Chicago, and New York City) 
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Special thanks to:
+https://github.com/stephanderton
+https://github.com/khaledimad
+https://github.com/YashMotwani
+https://www.geeksforgeeks.org/
+https://stackoverflow.com/
+https://beginnersbook.com/2018/02/python-programs/
