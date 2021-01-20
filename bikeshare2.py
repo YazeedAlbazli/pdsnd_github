@@ -143,12 +143,12 @@ def trip_duration_stats(df):
     start_time = time.time()
 
     # TO DO: display total travel time
-    travel_time_total = df['Trip Duration'].sum()
-    print("The Trip Time Total is:", travel_time_total) 
+    trip_time_total = df['Trip Duration'].sum()
+    print("The Trip Time Total is:", trip_time_total) 
     
     # TO DO: display mean travel time
-    travel_time_mean = df['Trip Duration'].mean()
-    print("The Travel Time Mean is:", travel_time_mean) 
+    trip_time_mean = df['Trip Duration'].mean()
+    print("The Travel Time Mean is:", trip_time_mean) 
 
     
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -182,11 +182,7 @@ def user_stats(df):
 
     try:
         latest_birth_year = df["Birth Year"].max()
-<<<<<<< HEAD
         print("The Most Recent Birth Year is:", latest_birth_year)
-=======
-        print("The Most Recent Birth Year is:", m_recent_birth_year)
->>>>>>> documentation
     except KeyError:
         print("Unavailable data.")
 
