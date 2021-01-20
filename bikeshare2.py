@@ -175,16 +175,16 @@ def user_stats(df):
 
     # TO DO: Display earliest, most recent, and most common year of birth
     try:
-      earliest_birth_year = df["Birth Year"].min()
-      print("The Earliest Birth Year is:", earliest_birth_year)
+        earliest_birth_year = df["Birth Year"].min()
+        print("The Earliest Birth Year is:", earliest_birth_year)
     except KeyError:
-      print("Unavailable data.")
+        print("Unavailable data.")
 
     try:
-      m_recent_birth_year = df["Birth Year"].max()
-      print("The Most Recent Birth Year is:", m_recent_birth_year)
+        latest_birth_year = df["Birth Year"].max()
+        print("The Most Recent Birth Year is:", m_recent_birth_year)
     except KeyError:
-      print("Unavailable data.")
+        print("Unavailable data.")
 
     try:
         m_common_birth_year = df['Birth Year'].value_counts().idxmax()
@@ -197,7 +197,7 @@ def user_stats(df):
 
     x = 1
     while True:
-        raw_data = input('\nWould you like to see more raw data? Enter yes or no.\n').lower()
+        raw_data = input('\nWould you like to see some raw data? Enter yes or no.\n').lower()
         if raw_data == 'yes':
             print(df[x:x+5])
             x = x+5

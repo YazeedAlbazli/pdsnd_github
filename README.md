@@ -1,5 +1,5 @@
 ### Date created
-This data has finalized and ready to upload on January 17th 2021 and the READ ME file on Januray 20th 2021
+This data has finalized and ready to upload on January 17th 2021 and the README.md file on Januray 20th 2021
 ### Project Title
 PDSND Project 2 - US Bikeshare
 
