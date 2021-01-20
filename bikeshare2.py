@@ -27,7 +27,7 @@ def get_filters():
 
     # TO DO: get user input for month (all, january, february, ... , june)
     while True:    
-        month = input("Please type a month among the first six months you'd like to see or type 'all':\n").lower()
+        month = input("Please type a month among the first six months you'd like to see:\n (january, february, march, april, may, or june) or type 'all':\n").lower()
         if month not in ['january', 'february', 'march', 'april', 'may', 'june', 'all']:
             print("invalid month. Please type a month among the first six months or type 'all'.")
             continue
@@ -36,7 +36,7 @@ def get_filters():
 
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     while True:
-        day = input("Please type which day of the week you'd like to see or type 'all':\n").lower()
+        day = input("Please type which day of the week you'd like to see:\n (monday, tuesday, wedensday, thursday, friday, saturday, or sunday) or type 'all':\n").lower()
         if day not in ['monday', 'tuesday', 'wednesday', 'thursday', 'friday', 'saturday', 'sunday', 'all']:
             print("invalid day. Please type a day of the week or type 'all'.")
             continue
@@ -97,17 +97,17 @@ def time_stats(df):
     start_time = time.time()
 
     # TO DO: display the most common month
-    most_common_month = df['month'].mode()[0]
-    print("The Most Common Month is:", most_common_month)
+    common_month = df['month'].mode()[0]
+    print("The Most Common Month is:", common_month)
 
     # TO DO: display the most common day of week
-    most_common_day = df['day_of_week'].mode()[0]
-    print("The Most Common Day of Week is:", most_common_day)
+    common_day = df['day_of_week'].mode()[0]
+    print("The Most Common Day of Week is:", common_day)
 
     # TO DO: display the most common start hour
     df['hour'] = df['Start Time'].dt.hour
-    most_common_hour = df['hour'].mode()[0]
-    print("The Most Common Hour is:", most_common_hour)
+    common_hour = df['hour'].mode()[0]
+    print("The Most Common Hour is:", common_hour)
 
     
     print("\nThis took %s seconds." % (time.time() - start_time))
